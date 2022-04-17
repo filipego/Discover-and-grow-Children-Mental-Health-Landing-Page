@@ -1,0 +1,90 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+body {
+  background: $white;
+  color: $color-grey-dark-1;
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 1.3em;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+
+%heading {
+  font-weight: 400;
+  font-family: $font-primary;
+  margin-bottom: 2rem;
+}
+
+.heading-1 {
+  @extend %heading;
+  font-size: 4.5rem;
+  line-height: 1;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.heading-2 {
+  @extend %heading;
+  font-size: 4rem;
+  font-style: italic;
+  line-height: 1;
+}
+
+.heading-3 {
+  @extend %heading;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.heading-4 {
+  @extend %heading;
+  font-size: 1.9rem;
+}
+
+p, li{
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: [full-start] 1fr [center-start] repeat(12, [col-start] minmax(min-content, 9.3rem) [col-end]) [center-end] 1fr [full-end];
+}
+
+.main{
+  grid-column: col-start 1 / col-end 12;
+  color: $black;
+}
+
+
+@media only screen and (max-width: $bp-largest) {
+
+}
+
+
+@media only screen and (max-width: $bp-large) {
+
+}
+
+@media only screen and (max-width: $bp-medium) {
+
+}
+
+
+@media (max-width: $bp-small) {
+
+}
+
+
+
+
+
