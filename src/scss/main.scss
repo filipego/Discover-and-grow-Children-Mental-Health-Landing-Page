@@ -136,7 +136,7 @@ header{
   }
   
   .heading-2 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     line-height: 1.3;
   }
 
@@ -164,6 +164,11 @@ header{
 
 
 @media (max-width: $bp-small) {
+
+  .heading-1 {
+    font-size: 2.8rem;
+    line-height: 1.3;
+  }
 
   .container {
     grid-template-rows: min-content 40vh;
