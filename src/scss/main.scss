@@ -42,13 +42,23 @@ body {
 
 .heading-3 {
   @extend %heading;
-  font-size: 1.6rem;
-  text-transform: uppercase;
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin-top: 4rem;
 }
 
 .heading-4 {
   @extend %heading;
   font-size: 1.9rem;
+}
+
+ul{
+  margin: 3rem 0 3rem 3rem;
+  list-style: disc;
+}
+
+ol{
+  margin: 2rem 0 3rem 4rem;
 }
 
 p, li{
@@ -109,6 +119,21 @@ header{
     align-self: center;
   }
 }
+
+
+  .article-img{
+    grid-column: col-start 3 / col-end 10;
+    width: 100%;
+    height: auto;
+    margin-bottom: 3rem;
+  }
+
+  .article-content{
+    grid-column: col-start 2 / col-end 11;
+    padding: 3rem 0 5rem 0;
+  }
+
+
 
 
 
